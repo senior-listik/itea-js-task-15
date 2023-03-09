@@ -1,0 +1,103 @@
+*,*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    position: relative;
+}
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    width: 400px;
+    background: white;
+    position: relative;
+}
+.modal__closeBtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid rgb(117, 47, 47);
+    cursor: pointer;
+    border-radius: 2px;
+    width: 20px;
+    text-align: center;
+    background: rgb(242, 194, 99);
+}
+.modal__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    
+}
+input {
+    margin-left: auto;
+}
+label{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+}
+.modal__enterBtn{
+    padding: 10px;
+    cursor: pointer;
+    background: rgb(236, 178, 7);
+    border-radius: 10px;
+}
+.modal__showBtn{
+    padding: 10px;
+    cursor: pointer;
+    background: rgb(112, 182, 5);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.openBtn{
+    height: 40px;
+    border-radius: 20px;
+    display: block;
+    width: 800px;
+    top: 50px;
+    left: calc((100vw / 2) - 400px);
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    background: rgb(222, 128, 6);
+    color: #fff;
+}
+#result{
+    /* width: 200px;
+    height: 100px; */
+    margin: 120px auto;
+    
+}
+.hide {
+    display: none;
+}
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    background-color: #96D4D4;
+    text-align: center;
+    padding: 5px 10px;
+}
